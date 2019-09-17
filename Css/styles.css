@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: inherit;
+    width:inherit;
+}
+
+.grid_container {
+    height: inherit;
+    width: inherit;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: "hArea"
+                         "mArea"
+                         "fArea";
+}
+
+.header {
+    grid-area: hArea;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header h1, h2, h3 {
+    font-family: Ubuntu;
+}
+
+.footer h1, h2, h3 {
+    font-family: Ubuntu;
+}
+
+
+.main {
+    grid-area: mArea;
+    padding-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: fArea;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dot {
+    background: grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
